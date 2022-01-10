@@ -71,31 +71,15 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <!-- <li><a class="active" href="index.html">Home</a></li> -->
+          <li><a href="index.html">首頁</a></li>
           <li><a href="about.html">認識銀鴻</a></li>
-          <li><a href="services.html">專業技術</a></li>
-          <li><a class="active" href="portfolio.html">生產設備</a></li>
+          <li><a href="services.html">營業項目</a></li>
+          <li><a class="active" href="portfolio.html">專業技術</a></li>
+          <li><a href="add_item.html">加值項目</a></li>
           <li><a href="blog.html">最新消息</a></li>
           <li><a href="contact.html">聯絡我們</a></li>
-          <li class="d-none"><a href="testimonials.html">Testimonials</a></li>
-          <li class="d-none"><a href="pricing.html">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
+
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -123,53 +107,18 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
-        <div class="row mb-5">
-          <div class="">
-            <div class="text-center mb-5">
-              <h2 class="mb-4">主要設備</h2>
-              <p>
-                為了有效提升生產效率，購入日本Asahi移動式多工沖壓機及數台中小型移動式多工沖壓機，可生產成品高度為0.2mm~64mm高精度深抽零件，及西德、奧地利塑膠機10多台，另有精密CNC放電加工機、成型研磨周邊設備及完備之量測儀器，提供各式客製模具設計製造，專業生產。
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card p-4">
-              <h4 class="mb-4">製造設備</h4>
-              <ul>
-                <li>Asahi移動式多工沖壓機*7台</li>
-                <li>移動式多工沖壓機110T & 160T & 45T*4台</li>
-                <li>日本Sodick CNC 放電加工機、CNC 線切割機*台</li>
-                <li>CNC車床*2台</li>
-                <li>快捷Quick-Jet高速CNC床*1台</li>
-                <li>永進高速CNC銑床*1台</li>
-                <li>日本Waida治具磨床*1台</li>
-                <li>車床,銑床,平磨磨床,圓筒磨床,無心研磨機,放電機,深孔加工機*26台</li>
-                <li>西德製Arburg射出機 & 奧地利Engel射出機</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card p-4">
-              <h4 class="mb-4">檢驗設備</h4>
-              <ul>
-                <li>Carl Zeiss 三次元量測儀*1台</li>
-                <li>Taylor Hobson TR585H 多功能全自動真圓度儀*1台</li>
-                <li>Taylor Hobson 輪廓儀*1台</li>
-                <li>Vickers 硬度試驗機*1台</li>
-                <li>花崗石比測平台*7台</li>
-                <li>PIN GAUGE,BLOCK GAUGE,環規等*18組</li>
-                <li>高度規,垂直規*2台</li>
-                <li>2.5D投影機,CCD放大顯示器,顯微鏡*2台</li>
-                <li>百分錶量測台*40台</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
+        <div class="row position-relative" style="z-index: 10;" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">全部設備</li>
+              <div class="d-inline-block production">
+                <li data-filter=".production" class="mb-3 filter-active">生產設備<i
+                    class="bi-caret-down-fill ms-3 d-inline-block"></i></li>
+                <div class="production_in position-absolute bg-white p-3 shadow-lg rounded-pill">
+                  <li data-filter=".mold">模具設備</li>
+                  <li data-filter=".stamping">沖壓設備</li>
+                  <li data-filter=".shoot">射出設備</li>
+                </div>
+              </div>
               <li data-filter=".filter-app">製造設備</li>
               <li data-filter=".filter-card">檢驗設備</li>
             </ul>
@@ -177,6 +126,36 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up">
+          <div class="col-lg-4 col-md-6 portfolio-item mold production">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>生產設備</h4>
+              <p>模具設備</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item stamping production">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>生產設備</h4>
+              <p>沖壓設備</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item shoot production">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>生產設備</h4>
+              <p>射出設備</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
+            </div>
+          </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
@@ -185,7 +164,7 @@
               <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+
             </div>
           </div>
 
@@ -196,7 +175,7 @@
               <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+
             </div>
           </div>
 
@@ -207,7 +186,7 @@
               <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+
             </div>
           </div>
 
@@ -218,7 +197,7 @@
               <p>製造設備</p>
               <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="製造設備 2"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+
             </div>
           </div>
 
@@ -229,7 +208,7 @@
               <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+
             </div>
           </div>
 
@@ -240,7 +219,7 @@
               <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+
             </div>
           </div>
 
@@ -251,7 +230,7 @@
               <p>製造設備</p>
               <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="製造設備 1"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+
             </div>
           </div>
 
@@ -262,7 +241,7 @@
               <p>製造設備</p>
               <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="製造設備 3"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+
             </div>
           </div>
 
