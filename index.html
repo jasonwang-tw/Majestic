@@ -100,18 +100,21 @@
             <div class="animate__animated animate__fadeInUp">
               <h1 style="font-weight: 700;font-size: 3rem;text-align: center;letter-spacing: .25rem;"
                 class="text-white text-uppercase mb-3">
-                Welcome<div style="font-size: 6rem;">MAJESTIC</div>
+                Welcome<div class="slide-title">MAJESTIC</div>
               </h1>
               <h3 class="text-center text-white">服務．品質．效率</h3>
             </div>
           </div>
-          <div class="carousel-container d-none">
-            <div class="carousel-content animate__animated animate__fadeInUp">
-              <h2>Welcome to <span>Flattern</span></h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
-                Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
-                deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+        </div>
+        <div class="carousel-item" style="background-image: url(assets/img/bg_1.jpg);">
+          <div class="d-flex justify-content-center align-items-center h-100 mask"
+            style="background-color: rgba(0, 0, 0, 0.5)">
+            <div class="animate__animated animate__fadeInUp">
+              <h1 style="font-weight: 700;font-size: 3rem;text-align: center;letter-spacing: .25rem;"
+                class="text-white text-uppercase mb-3">
+                Welcome<div class="slide-title">MAJESTIC</div>
+              </h1>
+              <h3 class="text-center text-white">服務．品質．效率</h3>
             </div>
           </div>
         </div>
@@ -158,7 +161,7 @@
     <section id="services" class="services my-5">
 
       <div class="container">
-        <h2 class="text-center mb-5"><strong>專業技術</strong></h2>
+        <h2 class="text-center mb-5"><strong>營業項目</strong></h2>
         <div class="row justify-content-center">
           <div class="col-lg-3 col-md-6">
             <div class="icon-box" data-aos="fade-up">
@@ -208,11 +211,19 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
-        <h2 class="text-center mb-5"><strong>生產設備</strong></h2>
-        <div class="row" data-aos="fade-up">
+        <h2 class="text-center mb-5"><strong>專業技術</strong></h2>
+        <div class="row position-relative" style="z-index: 10;" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">全部設備</li>
+              <div class="d-inline-block production">
+                <li data-filter=".production" class="mb-3">生產設備<i class="bi-caret-down-fill ms-3 d-inline-block"></i>
+                </li>
+                <div class="production_in position-absolute bg-white p-3 shadow-lg rounded-pill">
+                  <li data-filter=".mold">模具設備</li>
+                  <li data-filter=".stamping">沖壓設備</li>
+                  <li data-filter=".shoot">射出設備</li>
+                </div>
+              </div>
               <li data-filter=".filter-app">製造設備</li>
               <li data-filter=".filter-card">檢驗設備</li>
             </ul>
@@ -220,86 +231,125 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up">
+          <div class="col-lg-4 col-md-6 portfolio-item mold production">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>生產設備</h4>
+              <p>模具設備</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item stamping production">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>生產設備</h4>
+              <p>沖壓設備</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item shoot production">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>生產設備</h4>
+              <p>射出設備</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
+            </div>
+          </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
+              <h4>製造設備 1</h4>
+              <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>檢驗設備 3</h4>
+              <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
+              <h4>製造設備 2</h4>
+              <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
+              <h4>製造設備 2</h4>
+              <p>製造設備</p>
               <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+                class="portfolio-lightbox preview-link" title="製造設備 2"><i class="bx bx-plus"></i></a>
+
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
+              <h4>檢驗設備 2</h4>
+              <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
+              <h4>製造設備 3</h4>
+              <p>設備名稱</p>
               <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+                class="portfolio-lightbox preview-link" title="設備名稱"><i class="bx bx-plus"></i></a>
+
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
+              <h4>製造設備 1</h4>
+              <p>製造設備</p>
               <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                class="portfolio-lightbox preview-link" title="製造設備 1"><i class="bx bx-plus"></i></a>
+
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
+              <h4>製造設備 3</h4>
+              <p>製造設備</p>
               <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+                class="portfolio-lightbox preview-link" title="製造設備 3"><i class="bx bx-plus"></i></a>
+
             </div>
           </div>
+
 
         </div>
 

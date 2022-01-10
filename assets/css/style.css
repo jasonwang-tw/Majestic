@@ -1933,3 +1933,12 @@ section {
 .production_in {
   display: none;
 }
+
+.slide-title {
+  font-size: 6rem;
+}
+@media (max-width: 576px) {
+  .slide-title {
+    font-size: 3.5rem;
+  }
+}
