@@ -142,10 +142,10 @@
 
             </div>
             <div class="info-wrap text-center mt-5">
-              <div class="d-flex justify-content-center align-items-center mb-4">
-                <h4 style="margin-right: 2.5rem;font-weight: 600">內外銷業務部門負責人員及電話</h4>
+              <div class="d-md-flex justify-content-center align-items-center mb-4">
+                <h4 style="font-weight: 600" class="me-md-4 mb-md-0">內外銷業務部門負責人員及電話</h4>
                 <div>
-                  <p>業務專員：高明權（分機２２４）<br>業務助理：邱俶惠（分機２０８）</p>
+                  <p class="mb-0">業務專員：高明權（分機２２４）<br>業務助理：邱俶惠（分機２０８）</p>
                 </div>
               </div>
               <h4>歡迎來電洽詢或蒞廠指教<br>我們將竭誠為您服務</h4>
@@ -160,7 +160,15 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="稱呼" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="公司名稱" required>
+                </div>
+                <div class="col-md-6 form-group my-3 mt-md-0">
+                  <input type="text" class="form-control" name="email" id="email" placeholder="姓名" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="tel" name="name" class="form-control" id="name" placeholder="連絡電話" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>

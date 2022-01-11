@@ -701,6 +701,12 @@ section {
   color: #fff;
   background: #ed1c24;
 }
+#portfolio-flters .btn:hover,
+#portfolio-flters .btn.filter-active {
+  color: #ed1c24;
+  border-bottom: 1px solid #ed1c24;
+  border-radius: 0px !important;
+}
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }

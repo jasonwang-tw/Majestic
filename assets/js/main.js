@@ -182,9 +182,9 @@
         layoutMode: 'fitRows'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let portfolioFilters = select('#portfolio-flters .btn', true);
 
-      on('click', '#portfolio-flters li', function (e) {
+      on('click', '#portfolio-flters .btn', function (e) {
         e.preventDefault();
         portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
@@ -239,3 +239,18 @@
   });
 
 })()
+
+
+// =================== jason ===================
+
+function show_portfolio_photo() {
+  var click = document.querySelectorAll('#portfolio-flters .portfolio-btn');
+  var photo = document.getElementById('portfolio-photo');
+
+  for (const click_el of click) {
+    click_el.addEventListener('click', function () {
+      photo.classList.remove("d-none");
+    })
+  }
+}
+show_portfolio_photo()
