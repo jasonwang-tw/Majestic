@@ -675,6 +675,18 @@ section {
   font-size: 16px;
 }
 
+.portfolio .services .icon {
+  background: #011e41;
+}
+
+.portfolio .services .icon-box:hover .icon {
+  border: 2px solid #011e41;
+}
+.portfolio .services .icon-box:hover .icon i,
+.portfolio .services .icon-box:hover .title a {
+  color: #011e41;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -699,12 +711,12 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #ed1c24;
+  background: #011e41;
 }
 #portfolio-flters .btn:hover,
 #portfolio-flters .btn.filter-active {
-  color: #ed1c24;
-  border-bottom: 1px solid #ed1c24;
+  color: #011e41;
+  border-bottom: 2px solid #011e41;
   border-radius: 0px !important;
 }
 .portfolio #portfolio-flters li:last-child {
